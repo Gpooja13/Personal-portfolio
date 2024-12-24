@@ -1,33 +1,58 @@
-import Image from 'next/image';
-import { useState } from 'react';
-import { aboutMeData } from '../../data/aboutMeData';
+import Image from "next/image";
+import { useState } from "react";
+import { aboutMeData } from "../../data/aboutMeData";
 
 function AboutMeBio() {
-	const [aboutMe, setAboutMe] = useState(aboutMeData);
-	return (
-		<div className="block sm:flex sm:gap-10 mt-10 sm:mt-20">
-			<div className="w-full sm:w-1/4 mb-7 sm:mb-0">
-				<Image
-					src="/images/profile.jpeg"
-					width={200}
-					height={200}
-					className="rounded-lg"
-					alt="Profile Image"
-				/>
-			</div>
+  const [aboutMe, setAboutMe] = useState(aboutMeData);
+  return (
+    <div className="block sm:flex sm:gap-10 mt-10 sm:mt-20">
+      <div className="w-full sm:w-1/4 mb-7 sm:mb-0">
+        <Image
+          src="/images/profile.jpeg"
+          width={200}
+          height={200}
+          className="rounded-lg"
+          alt="Profile Image"
+        />
+      </div>
 
-			<div className="font-general-regular w-full sm:w-3/4 text-left">
-				{aboutMe.map((bio) => (
-					<p
-						className="mb-4 text-ternary-dark dark:text-ternary-light text-lg"
-						key={bio.id}
-					>
-						{bio.bio}
-					</p>
-				))}
-			</div>
-		</div>
-	);
+      <div className="font-general-regular w-full sm:w-3/4 text-left">
+        {aboutMeData.map((item) => (
+          <div key={item.id}>
+            {/* Displaying the bio */}
+            <p className="mb-4 text-ternary-dark dark:text-ternary-light text-lg">
+              {item.bio}
+            </p>
+
+            {/* Iterating over techStack if it exists */}
+            {item.techStack && (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
+                {item.techStack.map((category) => (
+                  <div key={category.category} className="mb-4">
+                    <h3 className="text-xl font-bold text-primary-dark dark:text-primary-light my-5">
+                      {category.category}
+                    </h3>
+                    <ul className="space-y-2">
+                      {category.items.map((tech, index) => (
+                        <li
+                          key={index}
+                          className="text-lg text-ternary-dark dark:text-ternary-light flex items-center space-x-2"
+                        >
+                          {/* Displaying the icon and the technology name */}
+                          <span className="text-indigo-700">{tech.icon}</span>
+                          <span>{tech.name}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }
 
 export default AboutMeBio;

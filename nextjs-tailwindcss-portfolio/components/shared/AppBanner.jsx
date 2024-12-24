@@ -13,7 +13,7 @@ function AppBanner() {
 			transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
 			className="flex flex-col sm:justify-between items-center sm:flex-row mt-5 md:mt-2"
 		>
-			<div className="w-full md:w-1/3 text-left">
+			<div className="w-full md:w-1/2 text-left">
 				<motion.h1
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
@@ -69,10 +69,11 @@ function AppBanner() {
 			>
 				<img
 					layout="responsive"
+					className='sm:rounded-full rounded-lg'
 					src={
 						activeTheme === 'dark'
-							? '/images/developer.svg'
-							: '/images/developer-dark.svg'
+							? '/images/developer-girl.svg'
+							: '/images/developer-girl.svg'
 					}
 					alt="Developer"
 				/>

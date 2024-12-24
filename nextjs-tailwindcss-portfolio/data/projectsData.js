@@ -3,6 +3,91 @@ import { v4 as uuidv4 } from "uuid";
 export const projectsData = [
   {
     id: 1,
+    title: "Blockchain based Certification Verification System",
+    url: "blockchain-certification-system",
+    category: "Web Application",
+    img: "/images/blockchain-certification.png",
+    ProjectHeader: {
+      title:
+        "Blockchain-based Certification Verification System for Universities",
+      publishDate: "October, 2024",
+      tags: "Blockchain / Certification Verification",
+    },
+    ProjectImages: [
+      {
+        id: uuidv4(),
+        title: "Blockchain-based Certification System",
+        img: "Blockchain-System-Image-ID",
+      },
+    ],
+    ProjectLinks: {
+      liveLink: "https://doccheck.netlify.app/signin",
+      githubLink:
+        "https://github.com/Gpooja13/Blockchain-based-Document-Verification-App-DocCheck",
+    },
+    ProjectInfo: {
+      ClientHeading: "About the Project",
+      CompanyInfo: [
+        {
+          id: uuidv4(),
+          details:
+            "This project implements a Blockchain-based Certification/Document Verification System (DocCheck) for universities using Ethereum's decentralized network, enabling secure issuance and verification of academic credentials.",
+        },
+      ],
+      ObjectivesHeading: "Objective",
+      ObjectivesDetails:
+        "To create a decentralized platform for universities to issue and verify academic certifications securely, ensuring immutability, transparency, and security of academic records.",
+      Technologies: [
+        {
+          title: "Tech Stack",
+          techs: [
+            "Ethereum",
+            "Solidity",
+            "IPFS",
+            "Web3.js",
+            "React.js",
+            "Firebase",
+            "Hardhat",
+          ],
+        },
+      ],
+      ProjectDetailsHeading: "Features",
+      ProjectDetails: [
+        {
+          id: uuidv4(),
+          details:
+            "Certificate Issuance: Universities can issue tamper-proof certificates directly on the blockchain.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "Certificate Verification: Students and employers can verify certificates using a simple hash lookup on the blockchain.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "Decentralized Storage: Academic documents are securely stored on IPFS, with only the document's hash stored on the blockchain.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "Smart Contracts: Smart contracts automate the issuance, verification, and revocation processes, ensuring transparency and security.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "User Authentication: Firebase Authentication secures user login and registration for students, universities, and employers.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "View or find specific issued documents by entering the credentials used at issuance (such as user ID and email). This feature helps users or authorities quickly locate and verify document details on the blockchain for validation purposes.",
+        },
+      ],
+    },
+  },
+  {
+    id: 2,
     title: "WhatsApp Clone",
     url: "whatsapp-clone",
     category: "Web Application",
@@ -103,14 +188,14 @@ export const projectsData = [
     },
   },
   {
-    id: 2,
+    id: 3,
     title: "ShopMe eCommerce",
     url: "shopme-ecommerce",
     category: "Web Application",
     img: "/images/shopme-ecommerce.png",
     ProjectHeader: {
       title: "ShopMe eCommerce",
-      publishDate: "June, 2024",
+      publishDate: "January, 2024",
       tags: "Full Stack / eCommerce / Online Shopping",
     },
     ProjectImages: [
@@ -210,14 +295,14 @@ export const projectsData = [
     },
   },
   {
-    id: 3,
+    id: 4,
     title: "Instagram Clone",
     url: "instagram-clone",
     category: "Web Application",
     img: "/images/instagram-clone.png",
     ProjectHeader: {
       title: "Instagram Clone",
-      publishDate: "July, 2024",
+      publishDate: "September, 2023",
       tags: "Full Stack / Social Media / Image & Video Sharing",
     },
     ProjectImages: [
@@ -297,6 +382,79 @@ export const projectsData = [
         {
           id: uuidv4(),
           details: "Lazy loading feature for fetching posts.",
+        },
+      ],
+    },
+  },
+  {
+    id: 6,
+    title: "News Banana",
+    url: "news-banana",
+    category: "Front End Application",
+    img: "/images/news-banana.png",
+    ProjectHeader: {
+      title: "News Banana",
+      publishDate: "April, 2023",
+      tags: "Front End Development / News Aggregator / Search & Pagination",
+    },
+    ProjectImages: [
+      {
+        id: uuidv4(),
+        title: "News Banana",
+        img: "nws-img12345",
+      },
+    ],
+    ProjectLinks: {
+      liveLink: "https://gpooja13.github.io/react-news-app/",
+      githubLink: "https://github.com/Gpooja13/news-banana-app",
+    },
+    ProjectInfo: {
+      ClientHeading: "About the Project",
+      CompanyInfo: [
+        {
+          id: uuidv4(),
+          details:
+            "NewsBanana is a modern web application that aggregates news articles from various categories, enabling users to search and navigate through content with auto-pagination functionality for a seamless browsing experience.",
+        },
+      ],
+      ObjectivesHeading: "Objective",
+      ObjectivesDetails:
+        "To deliver an platform for users to access categorized news, search articles, and experience smooth pagination while staying updated with the latest information.",
+      Technologies: [
+        {
+          title: "Tech Stack",
+          techs: ["React", "News API", "CSS"],
+        },
+      ],
+      ProjectDetailsHeading: "Features",
+      ProjectDetails: [
+        {
+          id: uuidv4(),
+          details:
+            "Category-Wise News: Browse news updates across categories like Technology, Sports, Entertainment, and more.",
+        },
+        {
+          id: uuidv4(),
+          details: "Real-time fetching of news articles from the News API.",
+        },
+        {
+          id: uuidv4(),
+          details: "Responsive design for both desktop and mobile devices.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "Search Functionality: Quickly search for news articles using keywords.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "Auto-Pagination: Smooth scrolling with infinite scroll support to load articles dynamically.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "Customizable User Interface: Adjust news preferences by category.",
         },
       ],
     },

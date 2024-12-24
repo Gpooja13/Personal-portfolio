@@ -99,6 +99,7 @@ function ProjectsGrid() {
 							required=""
 							placeholder="Search Projects"
 							aria-label="Name"
+							disabled
 						/>
 					</div>
 

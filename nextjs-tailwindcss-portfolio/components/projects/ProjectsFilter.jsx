@@ -1,5 +1,5 @@
 const selectOptions = [
-	'Web Application',
+	'Full Stack Application',
 	'Mobile Application',
 	'Front End Application',
 	'Back End Application',

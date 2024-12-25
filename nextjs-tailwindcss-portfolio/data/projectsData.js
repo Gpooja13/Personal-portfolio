@@ -5,7 +5,7 @@ export const projectsData = [
     id: 1,
     title: "Blockchain based Certification Verification System",
     url: "blockchain-certification-system",
-    category: "Web Application",
+    category: "Full Stack Application",
     img: "/images/blockchain-certification.png",
     ProjectHeader: {
       title:
@@ -17,7 +17,7 @@ export const projectsData = [
       {
         id: uuidv4(),
         title: "Blockchain-based Certification System",
-        img: "Blockchain-System-Image-ID",
+        img: "gTGhOmcGmGM",
       },
     ],
     ProjectLinks: {
@@ -90,7 +90,7 @@ export const projectsData = [
     id: 2,
     title: "WhatsApp Clone",
     url: "whatsapp-clone",
-    category: "Web Application",
+    category: "Full Stack Application",
     img: "/images/whatsapp-clone.png",
     ProjectHeader: {
       title: "WhatsApp Clone",
@@ -191,7 +191,7 @@ export const projectsData = [
     id: 3,
     title: "ShopMe eCommerce",
     url: "shopme-ecommerce",
-    category: "Web Application",
+    category: "Full Stack Application",
     img: "/images/shopme-ecommerce.png",
     ProjectHeader: {
       title: "ShopMe eCommerce",
@@ -298,7 +298,7 @@ export const projectsData = [
     id: 4,
     title: "Instagram Clone",
     url: "instagram-clone",
-    category: "Web Application",
+    category: "Full Stack Application",
     img: "/images/instagram-clone.png",
     ProjectHeader: {
       title: "Instagram Clone",
@@ -387,6 +387,80 @@ export const projectsData = [
     },
   },
   {
+    id: 5,
+    title: "YouTube FrontEnd Application",
+    url: "youtube-frontend",
+    category: "Front End Application",
+    img: "/images/youtube-frontend.png",
+    ProjectHeader: {
+      title: "YouTube FrontEnd Application",
+      publishDate: "December, 2023",
+      tags: "Frontend / Video Streaming / React",
+    },
+    ProjectImages: [
+      {
+        id: uuidv4(),
+        title: "YouTube FrontEnd Application",
+        img: "lpejKwYMdgk",
+      },
+    ],
+    ProjectLinks: {
+      liveLink: "",
+      githubLink: "https://github.com/Gpooja13/YouTube-Clone",
+    },
+    ProjectInfo: {
+      ClientHeading: "About the Project",
+      CompanyInfo: [
+        {
+          id: uuidv4(),
+          details:
+            "A YouTube-inspired frontend application built with React and Tailwind CSS, designed to showcase the core features of the YouTube interface, such as video browsing, searching, and watching.",
+        },
+      ],
+      ObjectivesHeading: "Objective",
+      ObjectivesDetails:
+        "To create a functional and responsive frontend for a YouTube-like video streaming platform that delivers a seamless user experience.",
+      Technologies: [
+        {
+          title: "Tech Stack",
+          techs: ["React", "Tailwind CSS", "YouTube Data API", "React Router"],
+        },
+      ],
+      ProjectDetailsHeading: "Features",
+      ProjectDetails: [
+        {
+          id: uuidv4(),
+          details:
+            "Homepage with dynamically fetched trending videos using the YouTube Data API.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "Search functionality to find videos by keywords or channel names.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "Video detail page displaying video information, view count, and like count.",
+        },
+        {
+          id: uuidv4(),
+          details: "Video playback with a clean and user-friendly interface.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "Channel page displaying the channel banner, details, and video list.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "Still woking on adding new components...",
+        },
+      ],
+    },
+  },
+  {
     id: 6,
     title: "News Banana",
     url: "news-banana",
@@ -401,12 +475,12 @@ export const projectsData = [
       {
         id: uuidv4(),
         title: "News Banana",
-        img: "nws-img12345",
+        img: "XodfGI3i0fM",
       },
     ],
     ProjectLinks: {
       liveLink: "https://gpooja13.github.io/react-news-app/",
-      githubLink: "https://github.com/Gpooja13/news-banana-app",
+      githubLink: "https://github.com/Gpooja13/react-news-app",
     },
     ProjectInfo: {
       ClientHeading: "About the Project",
@@ -455,6 +529,205 @@ export const projectsData = [
           id: uuidv4(),
           details:
             "Customizable User Interface: Adjust news preferences by category.",
+        },
+      ],
+    },
+  },
+  {
+    id: 7,
+    title: "Basic Frontend Application",
+    url: "basic-frontend-app",
+    category: "Front End Application",
+    img: "/images/basic-frontend.png",
+    ProjectHeader: {
+      title: "Basic Frontend Application",
+      publishDate: "June, 2024",
+      tags: "Frontend / Clean Design / Shadcn",
+    },
+    ProjectImages: [
+      {
+        id: uuidv4(),
+        title: "Basic Frontend Application",
+        img: "DTAnsPg5vvg",
+      },
+    ],
+    ProjectLinks: {
+      liveLink: "https://fluidesigns-assignment.vercel.app/",
+      githubLink: "https://github.com/Gpooja13/Fluidesigns-Assignment",
+    },
+    ProjectInfo: {
+      ClientHeading: "About the Project",
+      CompanyInfo: [
+        {
+          id: uuidv4(),
+          details:
+            "A modern and professional frontend application showcasing a clean and user-friendly design, built with React, React Router, Tailwind CSS, and ShadCN. The application emphasizes responsive layouts and accessibility, suitable for various business use cases.",
+        },
+      ],
+      ObjectivesHeading: "Objective",
+      ObjectivesDetails:
+        "To build a professional-grade frontend application that demonstrates clean design principles, seamless navigation, and a responsive user experience.",
+      Technologies: [
+        {
+          title: "Tech Stack",
+          techs: ["React", "React Router", "ShadCN", "Tailwind CSS"],
+        },
+      ],
+      ProjectDetailsHeading: "Features",
+      ProjectDetails: [
+        {
+          id: uuidv4(),
+          details:
+            "Multi-page application with smooth navigation using React Router.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "Clean and professional UI design powered by ShadCN and Tailwind CSS.",
+        },
+        {
+          id: uuidv4(),
+          details: "Responsive table for displaying data.",
+        },
+
+        {
+          id: uuidv4(),
+          details: "Reusable and customizable UI components built with ShadCN.",
+        },
+      ],
+    },
+  },
+  {
+    id: 8,
+    title: "Note Application",
+    url: "note-application",
+    category: "Front End Application",
+    img: "/images/note-application.png",
+    ProjectHeader: {
+      title: "Note Application",
+      publishDate: "June, 2023",
+      tags: "Full Stack / Productivity / Note Taking",
+    },
+    ProjectImages: [
+      {
+        id: uuidv4(),
+        title: "Note Application Interface",
+        img: "q_zDzKDP5DQ",
+      },
+    ],
+    ProjectLinks: {
+      liveLink: "https://your-live-app-url.com",
+      githubLink: "https://gpooja13.github.io/react-to-do-list/",
+    },
+    ProjectInfo: {
+      ClientHeading: "About the Project",
+      CompanyInfo: [
+        {
+          id: uuidv4(),
+          details:
+            "A simple and efficient note-taking web application built using React and CSS. It allows users to create, edit, delete, and manage notes in an organized manner with a clean and intuitive interface.",
+        },
+      ],
+      ObjectivesHeading: "Objective",
+      ObjectivesDetails:
+        "To develop a user-friendly note-taking application with essential features like CRUD operations, responsive design, and an organized layout for productivity.",
+      Technologies: [
+        {
+          title: "Tech Stack",
+          techs: ["React", "CSS", "LocalStorage API", "React Toastify"],
+        },
+      ],
+      ProjectDetailsHeading: "Features",
+      ProjectDetails: [
+        {
+          id: uuidv4(),
+          details: "Create, edit, and delete notes effortlessly.",
+        },
+
+        {
+          id: uuidv4(),
+          details: "Responsive design for seamless use across devices.",
+        },
+        {
+          id: uuidv4(),
+          details: "Search notes by keywords or tags.",
+        },
+
+        {
+          id: uuidv4(),
+          details: "Separate section for completed tasks/notes.",
+        },
+        {
+          id: uuidv4(),
+          details: "Data persistence using LocalStorage API for offline use.",
+        },
+      ],
+    },
+  },
+  {
+    id: 9,
+    title: "Weather Application",
+    url: "weather-application",
+    category: "Front End Application",
+    img: "/images/weather-application.png",
+    ProjectHeader: {
+      title: "Weather Application",
+      publishDate: "April, 2023",
+      tags: "Frontend / Weather Forecast / React",
+    },
+    ProjectImages: [
+      {
+        id: uuidv4(),
+        title: "Weather Application",
+        img: "_XZNlkLV9kg",
+      },
+    ],
+    ProjectLinks: {
+      liveLink: "https://gpooja13.github.io/react-weather-app/",
+      githubLink: "https://github.com/Gpooja13/react-weather-app",
+    },
+    ProjectInfo: {
+      ClientHeading: "About the Project",
+      CompanyInfo: [
+        {
+          id: uuidv4(),
+          details:
+            "A weather application built with React and powered by a weather API. The app allows users to search for real-time weather details of any city worldwide, including temperature, humidity, wind speed, and sunrise/sunset time.",
+        },
+      ],
+      ObjectivesHeading: "Objective",
+      ObjectivesDetails:
+        "To develop a user-friendly weather application with real-time data fetching, showcasing clean UI design and responsiveness.",
+      Technologies: [
+        {
+          title: "Tech Stack",
+          techs: ["React", "CSS", "OpenWeatherMap API"],
+        },
+      ],
+      ProjectDetailsHeading: "Features",
+      ProjectDetails: [
+        {
+          id: uuidv4(),
+          details: "Search functionality to get weather details of any city.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "Displays current weather details including temperature, humidity, pressure, wind speed, and weather conditions.",
+        },
+
+        {
+          id: uuidv4(),
+          details: "Responsive design for mobile, tablet, and desktop devices.",
+        },
+
+        {
+          id: uuidv4(),
+          details: "Real-time weather data fetched using OpenWeatherMap API.",
+        },
+        {
+          id: uuidv4(),
+          details: "Interactive icons and animations for weather conditions.",
         },
       ],
     },

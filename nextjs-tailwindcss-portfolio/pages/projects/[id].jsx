@@ -58,8 +58,8 @@ function ProjectSingle(props) {
             <div className="font-general-regular text-primary-dark dark:text-ternary-light">
               {props.project.ProjectInfo.Technologies[0].techs.map(
                 (tech, index) => (
-                  <ul>
-                    <li key={index} className="inline-block ml-11 mb-3">
+                  <ul key={index}>
+                    <li  className="inline-block ml-11 mb-3">
                       {tech}
                     </li>
                   </ul>
@@ -166,10 +166,9 @@ function ProjectSingle(props) {
           </p>
           {props.project.ProjectInfo.ProjectDetails.map((details) => {
             return (
-              <ul class="list-inside list-disc leading-relaxed">
-                {" "}
+              <ul class="list-inside list-disc leading-relaxed"  key={details.id}>
                 <li
-                  key={details.id}
+                
                   className="font-general-regular mb-1 text-ternary-dark dark:text-ternary-light text-justify"
                 >
                   {details.details}

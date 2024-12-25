@@ -22,6 +22,7 @@ function RelatedProjects() {
 				href="/projects/[id]"
 				as={'/projects/' + project.id}
 				aria-label="Single Project"
+        key={project.id}
 				passHref
 			>
             <Image

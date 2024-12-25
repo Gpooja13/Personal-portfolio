@@ -67,7 +67,7 @@ function AppBanner() {
 				transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
 				className="w-full sm:w-2/3 text-right float-right mt-8 sm:mt-0"
 			>
-				<img
+				{/* <img
 					layout="responsive"
 					className='sm:rounded-full rounded-lg'
 					src={
@@ -76,7 +76,18 @@ function AppBanner() {
 							: '/images/developer-girl.svg'
 					}
 					alt="Developer"
-				/>
+				/> */}
+				
+
+<Image
+  layout="responsive"
+  className="sm:rounded-full rounded-lg"
+  src={activeTheme === 'dark' ? '/images/developer-girl.svg' : '/images/developer-girl.svg'}
+  alt="Developer"
+  width={500}  // Add appropriate width
+  height={500} // Add appropriate height
+/>
+
 			</motion.div>
 		</motion.section>
 	);

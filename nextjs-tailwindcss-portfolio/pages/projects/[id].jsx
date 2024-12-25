@@ -36,7 +36,7 @@ function ProjectSingle(props) {
         {props.project.ProjectImages.map((project) => (
           <div
             className="relative w-full sm:w-full lg:w-[80%] overflow-hidden aspect-video mb-10 sm:mb-0"
-            key={project.id}
+            key={project.id} // Added key prop here
           >
             <iframe
               src={`https://www.youtube.com/embed/${project.img}`}
@@ -58,10 +58,8 @@ function ProjectSingle(props) {
             <div className="font-general-regular text-primary-dark dark:text-ternary-light">
               {props.project.ProjectInfo.Technologies[0].techs.map(
                 (tech, index) => (
-                  <ul key={index}>
-                    <li  className="inline-block ml-11 mb-3">
-                      {tech}
-                    </li>
+                  <ul key={index}> {/* Added key here */}
+                    <li className="inline-block ml-11 mb-3">{tech}</li>
                   </ul>
                 )
               )}
@@ -103,7 +101,7 @@ function ProjectSingle(props) {
                 return (
                   <li
                     className="font-general-regular text-ternary-dark dark:text-ternary-light text-justify"
-                    key={info.id}
+                    key={info.id} // Added key here
                   >
                     {info.details}
                   </li>
@@ -130,25 +128,25 @@ function ProjectSingle(props) {
               {props.project.ProjectInfo.Technologies[0].techs.join(" ")}
             </p>
             <div className="flex gap-4 mt-4">
-            <div className="bg-primary-light dark:bg-ternary-dark p-3 shadow-sm rounded-xl cursor-pointer">
-              <a
-                href={props.project.ProjectLinks.liveLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FiLink className="hover:text-gray-500 text-xl text-ternary-dark dark:text-ternary-light dark:hover:text-primary-light" />
-              </a>
+              <div className="bg-primary-light dark:bg-ternary-dark p-3 shadow-sm rounded-xl cursor-pointer">
+                <a
+                  href={props.project.ProjectLinks.liveLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FiLink className="hover:text-gray-500 text-xl text-ternary-dark dark:text-ternary-light dark:hover:text-primary-light" />
+                </a>
+              </div>
+              <div className=" bg-primary-light dark:bg-ternary-dark p-3 shadow-sm rounded-xl cursor-pointer">
+                <a
+                  href={props.project.ProjectLinks.githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FiGithub className="hover:text-gray-500 text-xl text-ternary-dark dark:text-ternary-light dark:hover:text-primary-light" />
+                </a>
+              </div>
             </div>
-            <div className=" bg-primary-light dark:bg-ternary-dark p-3 shadow-sm rounded-xl cursor-pointer">
-              <a
-                href={props.project.ProjectLinks.githubLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FiGithub className="hover:text-gray-500 text-xl text-ternary-dark dark:text-ternary-light dark:hover:text-primary-light" />
-              </a>
-            </div>
-          </div>
           </div>
 
           {/* Single project social sharing */}
@@ -166,11 +164,8 @@ function ProjectSingle(props) {
           </p>
           {props.project.ProjectInfo.ProjectDetails.map((details) => {
             return (
-              <ul class="list-inside list-disc leading-relaxed"  key={details.id}>
-                <li
-                
-                  className="font-general-regular mb-1 text-ternary-dark dark:text-ternary-light text-justify"
-                >
+              <ul className="list-inside list-disc leading-relaxed" key={details.id}> {/* Added key here */}
+                <li className="font-general-regular mb-1 text-ternary-dark dark:text-ternary-light text-justify">
                   {details.details}
                 </li>
               </ul>

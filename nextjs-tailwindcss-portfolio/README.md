@@ -1,18 +1,15 @@
 # Next.js, React & TailwindCSS Portfolio Project
 
-A simple portfolio starter theme built with Next.js, React and Tailwind CSS. This is the Next.js version of [vuejs-tailwindcss-portfolio](https://github.com/realstoman/vuejs-tailwindcss-portfolio).
+A simple portfolio starter theme built with Next.js, React and Tailwind CSS.
 
-![React-TailwindCSS-Portfolio](https://user-images.githubusercontent.com/16396664/146666086-28e88beb-c2f0-431f-adfb-2396d8f64c80.png)
+![React-TailwindCSS-Portfolio](./public/images/home.png)
+
+![React-TailwindCSS-Portfolio](./public/images/project.png)
 
 ## Demo URL
 
-[https://nextjs-tailwindcss-portfolio.vercel.app](https://nextjs-tailwindcss-portfolio.vercel.app)
+[https://personal-portfolio-git-main-gpooja13s-projects.vercel.app/](https://personal-portfolio-git-main-gpooja13s-projects.vercel.app/)
 
-## Other versions of this project
-
--   React Version: [https://github.com/realstoman/react-tailwindcss-portfolio](https://github.com/realstoman/react-tailwindcss-portfolio)
--   Vue.js Version: [https://github.com/realstoman/vuejs-tailwindcss-portfolio](https://github.com/realstoman/vuejs-tailwindcss-portfolio)
--   Nuxt.js Version: [https://github.com/realstoman/nuxtjs-tailwindcss-portfolio](https://github.com/realstoman/nuxtjs-tailwindcss-portfolio)
 
 ## Features
 
@@ -22,7 +19,7 @@ A simple portfolio starter theme built with Next.js, React and Tailwind CSS. Thi
 -   Framer Motion Transitions & Animations
 -   Reusable Components
 -   Projects filter by category
--   Projects filter by search
+-   Projects filter by search --Still in progress
 -   Dark Mode
 -   Smooth scroll
 -   Counter
@@ -31,24 +28,16 @@ A simple portfolio starter theme built with Next.js, React and Tailwind CSS. Thi
 -   Download file button
 -   Simple and responsive design
 
-### To Contribute to this project, read the [Contribution Guidlines](https://github.com/realstoman/nextjs-tailwindcss-portfolio/blob/main/CONTRIBUTING.md)
-
 ## Setup
 
 1. Make sure you have Node JS installed. If you don't have it:
 
 -   [Download it from nodejs.org](https://nodejs.org)
--   [Install it using NVM ](https://github.com/nvm-sh/nvm)
--   If you're on Mac, Homebrew is a good option too:
-
-```
-brew install node
-```
 
 2. Clone the repo:
 
 ```
-git clone https://github.com/realstoman/nextjs-tailwindcss-portfolio.git
+git clone https://github.com/personal-portfolio/nextjs-tailwindcss-portfolio.git
 ```
 
 3. Open the project folder:
@@ -69,16 +58,18 @@ npm install
 npm run dev
 ```
 
+
+## Other versions of this project
+
+-   React Version: [https://github.com/realstoman/react-tailwindcss-portfolio](https://github.com/realstoman/react-tailwindcss-portfolio)
+-   Vue.js Version: [https://github.com/realstoman/vuejs-tailwindcss-portfolio](https://github.com/realstoman/vuejs-tailwindcss-portfolio)
+-   Nuxt.js Version: [https://github.com/realstoman/nuxtjs-tailwindcss-portfolio](https://github.com/realstoman/nuxtjs-tailwindcss-portfolio)
+
+
 ## Notes
 
 -   Always run `npm install` after pulling new changes
--   I'll be constantly updating this repo as I'll be adding more sections to it, so please always check the projects section of this repo to see what tasks are under todo and in progress
--   Coming Soon [I'll be doing a screencast](https://www.youtube.com/realstoman). Soon I'll be uploading a video to my YouTube channel where I'll be going through the process of creating this portoflio
--   Illustrations from [unDraw](https://undraw.co) and [Freepik](https://freepik.com)
--   Images from [Unsplash](https://unsplash.com)
--   Feel free to use it as your own portfolio
+-   I'll be constantly updating this repo as I'll be adding more sections to it.
+-   Illustrations from [Freepik](https://freepik.com)
 -   Contributions are welcome
 
-### License
-
-[MIT](https://github.com/realstoman/nextjs-tailwindcss-portfolio/blob/main/LICENSE)

@@ -3,7 +3,7 @@ import { FiPhone, FiMapPin, FiMail } from "react-icons/fi";
 const contacts = [
   {
     id: 1,
-    name: "Unnao, Uttar Pradesh, India - 209801",
+    name: "Unnao (Kanpur), Uttar Pradesh, India - 209801",
     icon: <FiMapPin />,
   },
   {

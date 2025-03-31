@@ -35,9 +35,10 @@ function AboutMeBio() {
 
             {/* Iterating over techStack if it exists */}
             {item.techStack && (
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
                 {item.techStack.map((category) => (
-                  <div key={category.category} className="mb-4">
+                  <div key={category.category} className="mb-4 transition-transform duration-300 transform hover:scale-105
+">
                     <h3 className="text-xl font-bold text-primary-dark dark:text-primary-light my-5">
                       {category.category}
                     </h3>

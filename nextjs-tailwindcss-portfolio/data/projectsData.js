@@ -461,7 +461,78 @@ export const projectsData = [
     },
   },
   {
-    id: 6,
+   id: 6,
+  title: "Vexo: Animated Web Experience",
+  url: "vexo-animated",
+  category: "Front End Application",
+  img: "/images/vexo-ecommerce.png",
+  ProjectHeader: {
+    title: "Vexo: Animated Web Experience",
+    publishDate: "March, 2025",
+    tags: "Front End Development / Interactive Animations / GSAP",
+  },
+  ProjectImages: [
+    {
+      id: uuidv4(),
+      title: "Animated Experience",
+      img: "MzhLK6g53cE",
+    },
+  ],
+    ProjectLinks: {
+      liveLink: "https://gpooja13.github.io/Vexo-Ecommerce/",
+      githubLink: "https://github.com/Gpooja13/Vexo-Ecommerce",
+    },
+   ProjectInfo: {
+  ClientHeading: "About the Project",
+  CompanyInfo: [
+    {
+      id: uuidv4(),
+      details:
+        "Vevo is a modern e-commerce website designed for a seamless shopping experience, integrating smooth animations using GSAP for an engaging user interface.",
+    },
+  ],
+  ObjectivesHeading: "Objective",
+  ObjectivesDetails:
+    "To develop a dynamic and visually appealing e-commerce platform that enhances user engagement through interactive animations.",
+  Technologies: [
+    {
+      title: "Tech Stack",
+      techs: ["JavaScript", "GSAP", "HTML5", "CSS3"],
+    },
+  ],
+  ProjectDetailsHeading: "Features",
+  ProjectDetails: [
+    {
+      id: uuidv4(),
+      details:
+        "Smooth Animations: Integrated GSAP to create engaging animations and transitions for a visually appealing shopping experience.",
+    },
+    {
+      id: uuidv4(),
+      details:
+        "Interactive UI: Utilized GSAP animations for elements like product cards and page transitions to enhance user interaction.",
+    },
+    {
+      id: uuidv4(),
+      details:
+        "Product Showcase: Displayed products with hover effects, animated banners, and smooth scrolling.",
+    },
+    {
+      id: uuidv4(),
+      details:
+        "Optimized Performance: Implemented GSAP best practices to ensure smooth animations without affecting page load speed.",
+    },
+    {
+      id: uuidv4(),
+      details:
+        "Enhanced User Engagement: Used micro-interactions and scroll-based animations for a dynamic browsing experience.",
+    },
+  ],
+},
+
+  },
+  {
+    id: 7,
     title: "News Banana",
     url: "news-banana",
     category: "Front End Application",
@@ -534,7 +605,7 @@ export const projectsData = [
     },
   },
   {
-    id: 7,
+    id: 8,
     title: "Basic Frontend Application",
     url: "basic-frontend-app",
     category: "Front End Application",
@@ -598,7 +669,7 @@ export const projectsData = [
     },
   },
   {
-    id: 8,
+    id: 9,
     title: "Note Application",
     url: "note-application",
     category: "Front End Application",
@@ -665,7 +736,7 @@ export const projectsData = [
     },
   },
   {
-    id: 9,
+    id: 10,
     title: "Weather Application",
     url: "weather-application",
     category: "Front End Application",

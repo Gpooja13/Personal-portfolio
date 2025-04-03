@@ -11,10 +11,29 @@ const selectOptions = [
 ];
 
 function HireMeModal({ onClose, onRequest }) {
-  const [state, handleSubmit] = useForm("xqaaaqry");
-//   if (state.succeeded) {
-//     return <p>Thanks for joining!</p>;
-//   }
+  // const [state, handleSubmit] = useForm("xqaaaqry");
+
+  //   if (state.succeeded) {
+  //     return <p>Thanks for joining!</p>;
+  //   }
+
+
+  const sendEmail = (event) => {
+    event.preventDefault(); // Prevent page reload on form submit
+  
+    const name = event.target.name.value;
+    const email = event.target.email.value;
+    const subject = event.target.subject.value;
+    const message = event.target.message.value;
+  
+    const mailtoLink = `mailto:pooja13gupta09@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+    )}`;
+  
+    window.location.href = mailtoLink; // Open the mail client
+  };
+  
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -42,12 +61,16 @@ function HireMeModal({ onClose, onRequest }) {
             </div>
             <div className="modal-body p-5 w-full h-full">
               <form
-                onSubmit={
-                  // (e) => {
-                  //   e.preventDefault();
-                  handleSubmit
-                  // }
-                }
+                // onSubmit={async (e) => {
+                //   e.preventDefault();
+                //   await handleSubmit(e);
+                //   onClose();
+                // }}
+                 onSubmit={async (e) => {
+                  e.preventDefault();
+                  await sendEmail(e);
+                  onClose();
+                }}
                 className="max-w-xl m-4 text-left"
               >
                 <div className="">
@@ -101,10 +124,26 @@ function HireMeModal({ onClose, onRequest }) {
                   ></textarea>
                 </div>
 
-                <div className="mt-6 pb-4 sm:pb-1">
-                  <span
+                <div className="mt-6 pb-4 sm:pb-1 flex justify-between">
+                  {/* <span
                     // onClick={onRequest}
-                    disabled={state.submitting}
+                    // disabled={state.submitting}
+                    type="submit"
+                    className="px-4
+											sm:px-6
+											py-2
+											sm:py-2.5
+											text-white
+											bg-indigo-500
+											hover:bg-indigo-600
+											rounded-md
+											focus:ring-1 focus:ring-indigo-900 duration-500"
+                    aria-label="Submit Request"
+                  >
+                    <Button title="Send Request" />
+                  </span> */}
+                  <span
+                    
                     type="submit"
                     className="px-4
 											sm:px-6
@@ -122,7 +161,7 @@ function HireMeModal({ onClose, onRequest }) {
                 </div>
               </form>
             </div>
-            <div className="modal-footer mt-2 sm:mt-0 py-5 px-8 border0-t text-right">
+            {/* <div className="modal-footer mt-2 sm:mt-0 py-5 px-8 border0-t text-right">
               <span
                 onClick={onClose}
                 type="button"
@@ -135,7 +174,7 @@ function HireMeModal({ onClose, onRequest }) {
               >
                 <Button title="Close" />
               </span>
-            </div>
+            </div> */}
           </div>
         </div>
       </main>

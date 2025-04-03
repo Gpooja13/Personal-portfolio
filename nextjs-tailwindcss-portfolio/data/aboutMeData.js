@@ -29,7 +29,11 @@ import { AiFillThunderbolt } from "react-icons/ai";
 export const aboutMeData = [
   {
     id: uuidv4(),
-    bio: "Hi, I'm Pooja Gupta! I'm a highly motivated and passionate Full Stack Developer with expertise in the MERN stack. I hold a Master’s degree in Computer Applications (MCA) and a Bachelor's degree in the technology field.",
+    bio: "Hi, I'm Pooja Gupta!",
+  },
+  {
+    id: uuidv4(),
+    bio: "I'm a highly motivated and passionate Full Stack Developer with expertise in the MERN stack. I hold a Master’s degree in Computer Applications (MCA) and a Bachelor's degree in the technology field.",
   },
   {
     id: uuidv4(),

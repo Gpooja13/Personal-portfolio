@@ -22,6 +22,8 @@ import {
   SiPostgresql,
   SiMongodb,
   SiFlask,
+  SiBlockchaindotcom,
+  SiOpenai 
 } from "react-icons/si";
 import { BiLogoVisualStudio } from "react-icons/bi";
 import { AiFillThunderbolt } from "react-icons/ai";
@@ -33,15 +35,15 @@ export const aboutMeData = [
   },
   {
     id: uuidv4(),
-    bio: "I'm a highly motivated and passionate Full Stack Developer with expertise in the MERN stack. I hold a Master’s degree in Computer Applications (MCA) and a Bachelor's degree in the technology field.",
+    bio: "I'm a passionate Full Stack Developer with 1.5+ years of experience specializing in the MERN stack. I build scalable web applications, RESTful APIs, and responsive user interfaces with a strong focus on performance and user experience.",
   },
   {
     id: uuidv4(),
-    bio: "I have a strong foundation in software development, database management, and IT project management, gained through both academic studies and hands-on industry experience. Additionally, I have earned an IBM Full Stack Development certification from Coursera.",
+    bio: "Currently working as a Frontend-Focused Full Stack Developer at Luminar Media, I develop dynamic and user-friendly applications while collaborating closely with design and backend teams.",
   },
   {
     id: uuidv4(),
-    bio: "Currently, I’m working as a Front-End Developer at Luminar Media Company, where I focus on building dynamic and user-friendly web applications.",
+    bio: "I hold a Master’s in Computer Applications (MCA) and am certified in Full Stack Development by IBM (Coursera). I have hands-on experience in JavaScript, API development, authentication systems, and database management, along with strong skills in debugging, performance optimization, and Agile development.",
   },
   {
     id: uuidv4(),
@@ -94,6 +96,14 @@ export const aboutMeData = [
           { name: "Visual Studio", icon: <BiLogoVisualStudio /> },
           { name: "Thunderclient", icon: <AiFillThunderbolt /> },
           { name: "Postman", icon: <SiPostman /> },
+          { name: "Firebase", icon: <FaFire /> },
+        ],
+      },
+      {
+        category: "Other Technologies",
+        items: [
+          { name: "Blockchain", icon: <SiBlockchaindotcom />},
+          { name: "OpenAI API", icon: <SiOpenai /> },
         ],
       },
     ],

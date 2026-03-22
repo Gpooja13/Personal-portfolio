@@ -17,10 +17,10 @@ function AboutMeBio() {
       </div> */}
       <div className="w-full sm:w-1/4 mb-7 sm:mb-0 flex justify-center sm:block">
         <Image
-          src="/images/profile.png"
+          src="/images/profile.jpeg"
           width={270}
           height={270}
-          className="rounded-full"
+          className="rounded-full grayscale-[65%]"
           alt="Profile Image"
         />
       </div>
